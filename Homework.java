@@ -5,6 +5,80 @@ import java.util.Arrays;
 public class Homework {
 
     public static void main (String [] agrs){
+	    	    
+
+//LESSON 1
+
+
+//ad1.1    Write Java application which writes to console 5 lines of the next text  
+
+            /*int n=0;
+            while (n<5) {
+            System.out.println("I like to write Java code!");
+            n++;
+         }*/
+
+            
+              
+//ad1.2   Write Java application which writes to console the next line:
+          //75 + 15 = 90
+         // Use variables for this task. Declare two int variables, and put sum of them as a result of sum.   
+
+                /*int a = 75;
+                int b = 15;
+                int sum = a+b;
+                
+                System.out.println(a+" "+"+ "+b+" "+"= "+sum);*/
+
+       
+
+//ad1.3    Write Java application which asks you to enter your name, and waiting for entering. After entering               //name, application should greet you with the next message  Nice to meet you, {entered name}!  
+
+            
+            /*String Name = "Jan Nowak"; 
+            System.out.println("Nice to meet you," +Name+"!");*/
+
+            /*Scanner scanner = new Scanner (System.in);
+            System.out.println ("Enter your name");
+            String name = scanner.next();
+            System.out.println("Nice to meet you," +name+"!");*/
+
+
+//ad1.4    Write Java application which asks you to enter one number, next it asks you to enter another one            //number. At the end application should show on console multiplication of entered numbers.
+
+            /*Scanner scanner = new Scanner (System.in);
+            System.out.println ("Enter first number");
+            int a = scanner.nextInt();
+            System.out.println ("Enter next number");
+            int b = scanner.nextInt();
+            System.out.println(a+"*"+b+"="+(a*b));*/
+            
+          
+            
+//ad1.5 Write Java application to compute specified formula:
+       //4.0 * (1 - (1.0/3) + (1.0/5) - (1.0/7) + (1.0/9) - (1.0/11))
+
+
+            /*System.out.println(4.0 * (1 - (1.0/3) + (1.0/5) - (1.0/7) + (1.0/9) - (1.0/11)));*/
+
+             /*double a = 4.0;
+             double c = 1.0;
+             
+             int b = 1;
+             int d= 3;
+             int e= 5;
+             int f = 7;
+             int g = 9;
+             int k = 11;
+             
+ 
+             double result = a * (b - (c/d) + (c/e) - (c/f) + (c/g) - (c/k));
+             
+             System.out.println("Result of computation is : " + result);
+              
+             System.out.printf("Result of computation is : " + "%.2f",result);*/
+	    
+//LESSON 2	    
 
 //ad2.1 Application should ask us for item price. Next application should ask us for age. If age less than 6 years, calculate discount in //80%, If age more than 6 but less than 18, discount should be 25%, if age more than 65, discount should be 30%. In other cases there is no //discounts.
 
@@ -97,8 +171,7 @@ public class Homework {
 
 
        
-               
-
+             
 //ad2.5 Write application, which prints out all entered application parameters in reverse order
 
     /*int i = 9;
@@ -108,7 +181,7 @@ public class Homework {
 
   }*/
 
-
+//LESSON 3
 
 //ad.3.1 Using do..while loop printout numbers from 10 to 0.
 
@@ -121,7 +194,7 @@ public class Homework {
 		  i--;
 	  }
 	  while(i>0);
-	  System.out.println("Koniec pêtli");*/
+	  System.out.println("Koniec pÃªtli");*/
 
   //2)
          /*int i = 10;
@@ -131,8 +204,8 @@ public class Homework {
 		  i--;
 	  }
 	  while(i>20);
-	  System.out.println("Koniec pêtli"); //To jest petla
-                                              //Koniec pêtli*/
+	  System.out.println("Koniec pÃªtli"); //To jest petla
+                                              //Koniec pÃªtli*/
 
   //ad3.2  Using for with counter loop print out all application arguments.
 

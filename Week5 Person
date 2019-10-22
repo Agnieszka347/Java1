@@ -15,12 +15,24 @@ public class Person {
 
     }
 
-    public String getfirstName() {
+    public void setFirstName() {
+        this.firstName = firstName;
+    }
+
+    public String getFirstName() {
         return firstName;
     }
 
-    public String getlastName () {
+    public void setLastName() {
+        this.lastName = lastName;
+    }
+
+    public String getLastName() {
         return lastName;
+    }
+
+    public void setBirthDate() {
+        this.birthDate = birthDate;
     }
 
     public int getBirthDate() {

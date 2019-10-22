@@ -1,0 +1,27 @@
+package pl.itacademy.week5;
+
+public class Student extends Person {
+
+    private String faculty;
+    private int graduateYear;
+
+    public Student(String firstName, String lastName, int birthDate, String faculty, int graduateYear) {
+        super(firstName, lastName, birthDate);
+        this.faculty = faculty;
+        this.graduateYear = graduateYear;
+    }
+
+    public Student(String firstName, String lastName, int birthDate) {
+        super(firstName, lastName, birthDate);
+       this.faculty =faculty;
+       this.graduateYear= graduateYear;
+
+    }
+    public String getfaculty () {
+        return faculty;
+          }
+
+          public int getgraduateYear () {
+        return graduateYear;
+          }
+}

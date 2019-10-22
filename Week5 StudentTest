@@ -1,0 +1,16 @@
+package pl.itacademy.week5;
+
+
+public class StudentTest {
+    public static void main(String[] args) {
+
+        Student s = new Student("Jan","Nowak", 01-01-2000, "Faculty of Social Sciences", 3);
+
+        System.out.println(s.getfirstName());
+        System.out.println(s.getlastName());
+        System.out.println(s.getBirthDate());
+        System.out.println(s.getfaculty());
+        System.out.println(s.getgraduateYear());
+
+    }
+}

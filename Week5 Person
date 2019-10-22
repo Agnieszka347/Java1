@@ -1,0 +1,29 @@
+package pl.itacademy.week5;
+
+
+public class Person {
+
+    private String firstName;
+    private String lastName;
+    private int birthDate;
+
+
+    public Person(String firstName, String lastName, int birthDate) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthDate = birthDate;
+
+    }
+
+    public String getfirstName() {
+        return firstName;
+    }
+
+    public String getlastName () {
+        return lastName;
+    }
+
+    public int getBirthDate() {
+        return birthDate;
+    }
+}

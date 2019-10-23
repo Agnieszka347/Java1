@@ -11,13 +11,6 @@ public class Student extends Person {
         this.graduateYear = graduateYear;
     }
 
-    public Student(String firstName, String lastName, int birthDate) {
-        super(firstName, lastName, birthDate);
-        this.faculty = faculty;
-        this.graduateYear = graduateYear;
-
-    }
-
     public void setFaculty() {
         this.faculty = faculty;
     }

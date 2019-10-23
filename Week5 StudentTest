@@ -6,11 +6,11 @@ public class StudentTest {
 
         Student s = new Student("Jan","Nowak", 01-01-2000, "Faculty of Social Sciences", 3);
 
-        System.out.println(s.getFirstName());
-        System.out.println(s.getLastName());
-        System.out.println(s.getBirthDate());
-        System.out.println(s.getFaculty());
-        System.out.println(s.getGraduateYear());
+        System.out.println("First name:" +s.getFirstName());
+        System.out.println("Last name:" +s.getLastName());
+        System.out.println("Birth Date:" +s.getBirthDate());
+        System.out.println("Faculty:" +s.getFaculty());
+        System.out.println("Graduate Year:" +s.getGraduateYear());
 
     }
 }

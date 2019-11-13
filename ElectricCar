@@ -1,0 +1,32 @@
+package pl.itacademy.week6.Homework1;
+
+public class ElectricCar extends Car implements Chargable {
+
+    public ElectricCar(String name, String engine) {
+        super(name, engine);
+    }
+
+    @Override
+    public void charge() {
+        System.out.println(this.getName() + " has been charged.");
+    }
+    @Override
+    public String toString() {
+        return "ElectricCar{} " + super.toString();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        return super.equals(o);
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+}

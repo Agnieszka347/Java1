@@ -1,0 +1,61 @@
+package pl.itacademy.week6.Homework1;
+
+import java.util.Objects;
+
+public class Car {
+
+    private String name;
+    private String engine;
+
+
+    public Car(String name, String engine) {
+        this.name = name;
+        this.engine = engine;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEngine() {
+        return engine;
+    }
+
+    public void setEngine(String engine) {
+        this.engine = engine;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Car{" + "name='" + name + '\'' + ", engine='" + engine + '\'' + '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o)
+            return true;
+        if (!(o instanceof Car))
+            return false;
+        Car car = (Car) o;
+        return name.equals(car.name) && engine.equals(car.engine);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(name, engine);
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        Car cloned = (Car) super.clone();
+        cloned.name = "cloned_" + name;
+        cloned.engine = "cloned_" + engine;
+        return (Car) super.clone();
+    }
+}

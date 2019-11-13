@@ -1,0 +1,35 @@
+package pl.itacademy.week6.Homework1;
+
+public class FuelCar extends Car implements Tankable  {
+
+    public FuelCar(String name, String engine) {
+        super(name, engine);
+    }
+    @Override
+    public void tank() {
+        System.out.println(this.getName() + " has been tanked.");
+    }
+
+    @Override
+    public String toString() {
+        return "FuelCar{} " + super.toString();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        return super.equals(o);
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+           FuelCar cloned = (FuelCar) super.clone();
+      //  cloned.name = "cloned_" + name;
+      //  cloned.engine = "cloned_" + engine;
+        return (FuelCar) super.clone();
+    }
+}

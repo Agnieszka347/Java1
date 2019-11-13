@@ -1,0 +1,32 @@
+package pl.itacademy.week6.Homework1;
+
+public class CarTester {
+
+    public static void main(String[] args) throws CloneNotSupportedException {
+        Car first = new Car("Opel", "Fuel");
+        Car second = new Car("KIA NIRO", "Hybryd");
+        Car third = new Car("Mazda", "Electric");
+        Car fourth = new Car("VW", "Diesel");
+
+        System.out.println(first);
+        System.out.println(second);
+        System.out.println(third);
+        System.out.println(fourth);
+
+        if (first.equals(second)) {
+            System.out.println("Cars are the same object");
+        } else {
+            System.out.println("Cars are not the same object");
+        }
+        Car[] cars = new Car[4];
+        cars [0] = first;
+        cars [1] = second;
+        cars [2] = third;
+        cars [3] = fourth;
+        for(Car car : cars) {
+            System.out.println(cars);
+        }
+    }
+
+
+}

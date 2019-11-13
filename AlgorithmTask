@@ -1,0 +1,25 @@
+public class AlgorithmTask {
+
+    public static void main(String[] args) {
+
+        String text = "For given text find the longest and the shortest words";
+
+        String[] strings = text.split(" ");
+
+        String minWord= strings[0];
+        String maxWord= strings[0];
+
+        for (String t : strings) {
+            if (minWord.length() > t.length()) {
+                minWord = t;
+            }
+            if (maxWord.length() < t.length())
+                maxWord = t;
+        }
+        System.out.println("minWord: " + minWord + ", " +"maxWord: " + maxWord);
+
+    }
+
+}
+
+// minWord: For, maxWord: shortest

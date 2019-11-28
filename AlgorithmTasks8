@@ -1,0 +1,51 @@
+package pl.itacademy.week8.Homework8;
+
+import java.util.*;
+
+public class AlgorithmTasks8 {
+
+    public static void main(String[] args) {
+
+        String text = "This is a test text";
+        LinkedHashSet<String> strings = new LinkedHashSet ();
+
+        strings.add("T");
+        strings.add("h");
+        strings.add("i");
+        strings.add("s");
+        strings.add("i");
+        strings.add("s");
+        strings.add("a");
+        strings.add("t");
+        strings.add("e");
+        strings.add("s");
+        strings.add("t");
+        strings.add("t");
+        strings.add("e");
+        strings.add("x");
+        strings.add("t");
+
+        System.out.println(strings);
+
+        Map<Integer, String> map = new LinkedHashMap<>();
+
+        map.put(0,"T");
+        map.put(1,"h");
+        map.put(2,"i");
+        map.put(3,"s");
+        map.put(4,"i");
+        map.put(5,"s");
+        map.put(6,"a");
+        map.put(7,"t");
+        map.put(8,"e");
+        map.put(9,"s");
+        map.put(10,"t");
+        map.put(11,"t");
+        map.put(12,"e");
+        map.put(13,"x");
+        map.put(14,"t");
+
+        System.out.println(map);
+
+    }
+}

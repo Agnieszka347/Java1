@@ -23,6 +23,8 @@ public class DayEnumTester {
         for (Day days: Day.values()) {
 
             System.out.println(days.getEnglishName());
+            
+             System.out.println("=======================");
         }
     }
 

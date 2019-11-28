@@ -20,7 +20,7 @@ public class CurrentTimeMillis {
          long endTime1 = System.currentTimeMillis();
          long result1 =endTime1 - startTime1 ;
          System.out.println(result1);
-         System.out.println(numbers);
+         //System.out.println(numbers);
 
 
         LinkedList <Integer> integers = new LinkedList<> ();
@@ -34,30 +34,33 @@ public class CurrentTimeMillis {
         long result2 =endTime2 - startTime2 ;
 
         System.out.println(result2);
-        System.out.println(integers);
+        //System.out.println(integers);
 
         long startTime3 = System.currentTimeMillis();
 
         for (int i =0; i<100000; i++) {
-            numbers.get (5000);
+            numbers.get (i);
         }
         long endTime3 = System.currentTimeMillis();
         long result3 =endTime3 - startTime3 ;
 
         System.out.println(result3);
-        System.out.println(numbers.get(5000));
+        //System.out.println(numbers.get(i));
 
         long startTime4 = System.currentTimeMillis();
 
         for (int i = 0; i<100000; i ++) {
-            integers.get(5000);
+            integers.get(i);
         }
         long endTime4 = System.currentTimeMillis();
         long result4 =endTime2 - startTime2 ;
 
         System.out.println(result4);
-        System.out.println(integers.get(5000));
-
+        //System.out.println(integers.get(i));
 
     }
 }
+//Result1 2568
+//Result2 16
+//Result3 0
+//Result4 16

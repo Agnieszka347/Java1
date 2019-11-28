@@ -1,0 +1,84 @@
+package pl.itacademy.week8.Homework8;
+
+import java.util.ArrayList;
+
+public enum Day {
+
+    MON("MONDAY", "PONIEDZIAŁEK", true),
+    TUE("TUESDAY", "WTOREK", true),
+    WED("WEDNESDAY", "SRODA", true),
+    THU("THURSDAY", "CZWARTEK", true),
+    FRI("FRIDAY", "PIĄTEK", true),
+    SAT("SATURDAY", "SOBOTA", false),
+    SUN("SUNDAY", "NIEDZIELA", false);
+
+    private String englishName;
+    private String polishName;
+    boolean workingDay;
+
+    Day(String englishName, String polishName, boolean workingDay) {
+        this.englishName = englishName;
+        this.polishName = polishName;
+        this.workingDay = workingDay;
+    }
+
+    public String getEnglishName() {
+        return englishName;
+    }
+
+    public String getPolishName() {
+        return polishName;
+    }
+
+    public boolean isWorkingDay() {
+        return workingDay;
+    }
+
+    public static Day fromPolishName(String polishName) {
+        for (Day day : Day.values()) {
+            if (day.polishName.equals(polishName)) {
+                return day;
+            }
+        }
+        return null;
+    }
+
+    public static Day fromEnglishName(String englishName) {
+        for (Day day : Day.values()) {
+            if (day.englishName.equals(englishName)) {
+                return day;
+            }
+        }
+        return null;
+    }
+
+    public static boolean isWeekend(String freeDays) {
+        if (freeDays == "SUN" || freeDays == "SAT") {
+            return true;
+        } else {
+            return false;
+        }
+
+       /* public static ArrayList<Day> getWeekendDays() {
+            ArrayList<Day> weekendDays = new ArrayList<>();
+
+            for (Day day: Day.values()) {
+                if (day.workingDay == false){
+                    weekendDays.add(day);
+                }
+            }
+            return weekendDays;
+        }
+        public static ArrayList<Day> getWorkingDays() {
+            ArrayList<Day> workingDays = new ArrayList<>();
+
+            for (Day day : Day.values()) {
+                if (day.workingDay == true){
+                    workingDays.add(day);
+                }
+            }
+            return workingDays;
+        }*/
+
+    }
+}
